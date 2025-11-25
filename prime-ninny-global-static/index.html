@@ -8,6 +8,7 @@
     <meta name="author" content="Prime Ninny Global Group">
     <title>Prime Ninny Global Group - Excellence in Manufacturing and Secure Escrow</title>
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -29,7 +30,7 @@
             <span>Prime Ninny Global Group</span>
         </div>
         <nav class="nav">
-            <ul>
+            <ul style="margin-bottom: 0rem;">
                 <!-- LOGO — appears only when menu is open -->
                 <div class="menu-logo">
                     <img src="assets/img/logo_tp.png" alt="Prime Ninny Global Group Logo">
@@ -55,9 +56,9 @@
     </div>
 </section>
 <!-- Services -->
-<section id="services" class="services fade-section">
-    <div class="container">
-        <h2 class="section-title">Our Services & Products</h2>
+<section id="services" class="services">
+    <div class="container"><br>
+        <h2 class="section-title">Services & Products</h2>
         <div class="grid">
             <div class="card">
                 <img src="assets/img/food-manufacturing.jpg" alt="State-of-the-art food manufacturing facility">
@@ -117,7 +118,7 @@
         </p>
     </div>
 </section>
-<!-- Testimonials (UPDATED: Stars under testimony; Bigger round pics left-aligned) -->
+<!-- Testimonials  -->
 <section id="testimonials" class="testimonials fade-section">
     <div class="container">
         <h2 class="section-title">Team</h2>
@@ -171,49 +172,67 @@
     </div>
 </section>
 
-<!-- Contact (Professional info cards + prominent WhatsApp CTA) -->
-<section id="contact" class="contact fade-section">
+<!-- Contact -->
+
+<section id="contact" class="py-5 fade-section contact parallax-section" data-parallax-speed="0.35">
     <div class="container">
         <h2 class="section-title">Contact Information</h2>
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <h3>Corporate Details</h3>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Location</h4>
-                        <p>Amasaman-Satellite, Ghana</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <p>0592943443</p>
-                        <p>0540112868</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p><a href="mailto:ninnygroupltd@gmail.com">ninnygroupltd@gmail.com</a></p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-clock"></i>
-                        <h4>Operating Hours</h4>
-                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="text-center text-md-start">
+                                    <i class="fas fa-map-marker-alt fa-2x mb-3 fc"></i>
+                                    <h6 class="fw-bold">Location</h6>
+                                    <p class="text-only">Amasaman-Satellite, Ghana</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center text-md-start">
+                                    <i class="fas fa-phone fa-2x mb-3 fc"></i>
+                                    <h6 class="fw-bold">Phone</h6>
+                                    <p class="text-only">+233 59 294 3443<br>+233 54 011 2868</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center text-md-start">
+                                    <i class="fas fa-envelope fa-2x mb-3 fc"></i>
+                                    <h6 class="fw-bold">Email</h6>
+                                    <p class="text-only"><a href="mailto:ninnygroupltd@gmail.com">ninnygroupltd@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center text-md-start">
+                                    <i class="fas fa-clock fa-2x mb-3 fc"></i>
+                                    <h6 class="fw-bold">Operating Hours</h6>
+                                    <p class="text-only">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="whatsapp-section">
-                <h3>Instant Connect</h3>
-                <div class="whatsapp-card">
-                    <a href="https://wa.me/+233592943443?text=Hello%20Prime%20Ninny%20Global%20Ltd%2C%20I%27m%20interested%20in%20your%20services." class="btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Connect via WhatsApp
-                    </a>
-                    <small>Response within business hours.</small>
+            <div class="col-lg-4">
+                <!-- <div class="card shadow-sm border-0 h-100 whatsapp-section">
+                    <div class="card-body d-flex align-items-center justify-content-center whatsapp-card">
+                        <a href="https://wa.me/+233592943443?text=Hello%20Prime%20Ninny%20Global%20Ltd%2C%20I%27m%20interested%20in%20your%20services." class="btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Connect via WhatsApp
+                        </a>
+                        <small>Response within business hours.</small>
+                    </div>
+                </div> -->
+
+                <div class="whatsapp-section">
+                    <div class="whatsapp-card">
+                        <a href="https://wa.me/+233592943443?text=Hello%20Prime%20Ninny%20Global%20Ltd%2C%20I%27m%20interested%20in%20your%20services." class="btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <small>Response within business hours.</small>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="privacy-link">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </div>
     </div>
 </section>

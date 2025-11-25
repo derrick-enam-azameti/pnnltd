@@ -26,8 +26,8 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
     color: white;
     padding: 2rem;
 }
-.logo{display:flex;align-items:center;font-weight:700;font-size:1.2rem;}
-.logo img{width:40px;margin-right:.5rem;}
+.logo{display:flex;align-items:center;font-weight:700;font-size:1.1rem;}
+.logo img{width:30px;margin-right:.6rem;}
 .nav ul{display:flex;gap:2rem;}
 .nav a{font-weight:600;transition:color .1s;}
 .nav a:hover{color:#e67e22;}
@@ -35,7 +35,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 .hamburger span{width:25px;height:3px;background:#333;transition:.1s;}
 /* HERO */
 .hero{
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../img/hero-bg.jpg') center/cover no-repeat;
+    background:linear-gradient(rgba(0, 0, 3, 0.2),rgba(0, 0, 66, 0.5)),url('../img/hero-bg.jpg') center/cover no-repeat;
     background-attachment: fixed;
     color:#fff;
     text-align:center;
@@ -81,7 +81,20 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 .contact-wrapper{display:grid;grid-template-columns:2fr 1fr;gap:3rem;margin-bottom:2rem;}
 .contact-info h3{text-align:left;margin-bottom:2rem;color:#e67e22;}
 .info-grid{display:grid;gap:1rem;}
-.info-card{display:flex;align-items:center;gap:1rem;padding:1.5rem;background:#fff;border-left:4px solid #e67e22;border-radius:0 8px 8px 0;box-shadow:0 2px 8px rgba(0,0,0,.05);transition:box-shadow .1s;}
+.info-card{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    padding:0.5rem;
+    /* background:#fff; */
+    border-left:4px solid #e67e22;
+    border-radius:0 8px 8px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    transition:box-shadow .1s;
+}
+.fc {
+    color: #e67e22;
+}
 .info-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.1);}
 .info-card i{font-size:1.5rem;color:#e67e22;flex-shrink:0;}
 .info-card h4{margin:0 0 .5rem 0;color:#333;}
@@ -153,7 +166,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 .menu-logo {
     position: absolute;
     top: 70px;
-    left: 50%;
+    left: 56%;
     transform: translateX(-50%);
     width: 90px;
     opacity: 0;
