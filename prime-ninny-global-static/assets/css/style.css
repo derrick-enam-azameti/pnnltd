@@ -152,10 +152,10 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 /* LOGO — visible only when menu is open */
 .menu-logo {
     position: absolute;
-    top: 22px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
-    width: 160px;
+    width: 90px;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
