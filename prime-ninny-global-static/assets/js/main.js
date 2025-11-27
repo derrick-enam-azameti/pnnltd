@@ -112,3 +112,36 @@ $(document).ready(function() {
     observer.observe(section);
   });
 });
+
+// Video playback rate adjustment
+// document.querySelector('.hero-video').playbackRate = 0.75;
+
+// Hero video freeze-frame cycle (disabled for now)
+// const video = document.getElementById('heroVideo');
+//   const freeze = document.querySelector('.freeze-frame');
+
+//   const playTime  = 10000;   // 3 seconds playing
+//   const pauseTime = 5000;  // 10 seconds frozen
+
+//   function cycle() {
+//     // video.currentTime = 0;
+//     video.play();
+//     freeze.classList.remove('active');
+
+//     // After 3s → smooth fade to freeze frame
+//     setTimeout(() => {
+//       freeze.style.backgroundImage = `url(${video.currentSrc})`; // capture exact frame
+//       freeze.classList.add('active');
+//       video.pause();
+      
+//       // After 10s pause → smooth fade back to video
+//       setTimeout(() => {
+//         freeze.classList.remove('active');
+//         setTimeout(cycle, 600); // tiny delay so video has time to start again
+//       }, pauseTime);
+//     }, playTime);
+//   }
+
+//   // Start when video is ready
+//   video.oncanplay = cycle;
+//   if (video.readyState >= 3) cycle();

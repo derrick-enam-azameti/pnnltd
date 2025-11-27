@@ -49,8 +49,12 @@
 </header>
 <!-- Hero Section -->
 <section id="home" class="hero fade-section">
+    
+    
     <div class="contained">
+        
         <h1>Prime Ninny Global Group</h1>
+        
         <p>Excellence in Every Product. Integrity in Every Service.</p>
         <a href="#contact" class="btn-primary">Connect With Us</a>
     </div>
@@ -61,7 +65,19 @@
         <h2 class="section-title">Services & Products</h2>
         <div class="grid">
             <div class="card">
-                <img src="assets/img/food-manufacturing.jpg" alt="State-of-the-art food manufacturing facility">
+                <video 
+                    class="card-video"
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline
+                    preload="metadata"
+                    poster="assets/img/food-manufacturing.jpg">   <!-- same image as fallback / instant load -->
+                    <source src="assets/img/ninny.mp4" type="video/mp4">
+                    <!-- Optional WebM for even smaller size -->
+                    <!-- <source src="assets/videos/food-manufacturing.webm" type="video/webm"> -->
+                    <img src="assets/img/food-manufacturing.jpg" alt="State-of-the-art food manufacturing facility">
+                </video>
                 <h3>Food Manufacturing</h3>
                 <p>
                     We produce healthy, affordable, and high-quality food products suitable for all households. Our products include Tom Brown and Tiganice (Tigernut blend), crafted with care to nourish families.
