@@ -102,7 +102,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06);transition:transform .1s, box-shadow .1s;}
 .card-video {
   width: 100%;
-  height: 245px;                 /* card video height */
+  height: 250px;                 /* card video height */
   object-fit: cover;
   display: block;
   background: #000;
@@ -635,7 +635,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 
 /* Mobile */
 @media (max-width: 768px) {
-    .division-img { height: 160px; }
+    .division-img { height: 250px; }
 }
 /* DIVISIONS – Text Left + Landscape Image Right */
 /* DIVISIONS – Tailored for Your Real Tall Product Photos */
