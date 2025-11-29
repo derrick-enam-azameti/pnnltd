@@ -214,7 +214,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 }
 /* FADE-IN SECTIONS (Smooth on scroll) */
 .fade-section{opacity:0;transform:translateY(20px);transition:opacity .5s ease, transform .5s ease;}
-.fade-section.visible{opacity:1;transform:translateY(0);}
+.fade-section.visible{opacity:1;transform:translateY(10);}
 /* LOGO — visible only when menu is open */
 .menu-logo {
     position: absolute;
@@ -293,7 +293,101 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
     background: #f8f9fa;
 }
 
+/* ==================== TEAM SECTION – MODERN & ELEGANT ==================== */
+.team-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
 
+.team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: visible;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.team-img-wrapper {
+    margin: -60px auto 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 2;
+    background: #fff;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-img {
+    transform: scale(1.08);
+}
+
+.team-info {
+    padding: 2rem 1.5rem 1.8rem;
+    margin-top: -20px;
+}
+
+.team-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #222;
+}
+
+.role {
+    color: #e67e22;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.bio {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.team-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #f0f0f0;
+    color: #555;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.team-social a:hover {
+    background: #e67e22;
+    color: #fff;
+    transform: translateY(-3px);
+}
 
 
 /* MOBILE */
@@ -328,3 +422,136 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
   .services .card p{padding-bottom:1rem;}
   #floatingWhatsApp { bottom: 80px; font-size: 1.3rem; } /* Slightly larger on mobile */
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .team-img-wrapper {
+        width: 120px;
+        height: 120px;
+        margin: -50px auto 0;
+    }
+    .team-info {
+        padding: 1.8rem 1.2rem;
+    }
+}
+
+/* PREMIUM ABOUT SECTION – Corporate & Beautiful */
+.about-premium {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.about-header .lead-text {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #444;
+}
+
+.timeline-modern {
+    position: relative;
+    max-width: 1100px;
+    margin: 4rem auto;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #e67e22, #f39c12);
+    border-radius: 2px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-block {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.timeline-point {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 6px solid #e67e22;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 0 0 6px rgba(230,126,34,.2);
+}
+
+.timeline-card {
+    background: #fff;
+    padding: 1.8rem 1.2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.timeline-block:hover .timeline-card {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.timeline-block.active .timeline-card {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+    transform: translateY(-10px);
+}
+
+.timeline-card .year {
+    display: block;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #e67e22;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-block.active .year { color: white; }
+
+.timeline-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.mv-card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    height: 100%;
+}
+
+.mv-card:hover { transform: translateY(-10px); }
+
+.values-list {
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.values-list li::before {
+    content: "✓ ";
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .timeline-container { flex-direction: column; gap: 3rem; }
+    .timeline-line { display: none; }
+    .timeline-card { max-width: 100%; }
+}
+
