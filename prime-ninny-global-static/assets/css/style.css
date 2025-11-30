@@ -706,7 +706,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 }
 
 /* Mobile – full width, centered */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .division-optimized { padding: 4rem 0; }
     .product-photo-wrapper {
         max-width: 380px;
@@ -726,3 +726,9 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
         margin: 0 auto;
     }
 }
+
+
+/* *, *::before, *::after {
+    max-width: 100vw !important;
+    box-sizing: border-box;
+} */
