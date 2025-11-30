@@ -1,6 +1,6 @@
 /* RESET & BASE */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; width: 100%; overflow-x: hidden;}
 body{font-family:'Montserrat',sans-serif;line-height:1.6;color:#333;background:#f9f9fb;}
 img{
     max-width:100%;
