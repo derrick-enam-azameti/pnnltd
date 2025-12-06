@@ -736,3 +736,50 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
     max-width: 100vw !important;
     box-sizing: border-box;
 } */
+
+
+/* Prevent horizontal page shift on small screens */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Make sure elements don't exceed viewport */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+img, video, iframe {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure common layout containers respect viewport */
+.container,
+.row,
+.team-grid,
+.timeline-container,
+.division-card,
+.product-photo-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Specific: video used in a card */
+.card-video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* If any element used 100vw anywhere — replace with width:100% or use this helper */
+.full-viewport, [style*="100vw"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Optional: temporarily enable to find offending elements on mobile */
+@media (max-width: 768px) {
+    /* * { outline: 1px solid rgba(255,0,0,0.08); } */
+}
