@@ -9,7 +9,11 @@ img{
 }
 a{text-decoration:none;color:inherit;}
 ul{list-style:none;}
-.container{width:100%;max-width:1200px;margin:auto;}
+.container{
+    width:100%;
+    /* max-width:1200px; */
+    margin:auto;
+}
 /* TYPOGRAPHY */
 h1,h2,h3{font-family:'Playfair Display',serif;}
 h1{font-size:2.8rem;} h2{font-size:2.1rem;margin-bottom:1.5rem;text-align:center;}
@@ -98,7 +102,7 @@ h4{font-size:1.1rem;font-weight:600;margin:.5rem 0 .25rem;}
 .btn-whatsapp:hover{background:#128C7E;transform:translateY(-2px);}
 .btn-whatsapp i{font-size:1.5rem;margin-right:.5rem;} /* Bigger WhatsApp icon */
 /* GRID & CARDS */
-.grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+.grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
 .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06);transition:transform .1s, box-shadow .1s;}
 .card-video {
   width: 100%;
